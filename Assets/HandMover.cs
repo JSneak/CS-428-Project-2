@@ -17,7 +17,7 @@ public class HandMover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bigHand.transform.Rotate(0,0, 45*Time.deltaTime); 
-
+        bigHand.transform.Rotate(0,12*Time.deltaTime, 0); 
+        smallHand.transform.Rotate(0,-Time.deltaTime, 0); 
     }
 }
