@@ -46,7 +46,12 @@ public class DigitalTimeChanger : MonoBehaviour
             minute++;
         }
 
-        string time = hour.ToString() + ":" + minute.ToString() + timeOfDay;
+        string minuteStr = minute.ToString();
+        if(minute/10 == 0){
+            minuteStr = "0" + minuteStr;
+        }
+
+        string time = hour.ToString() + ":" + minuteStr + timeOfDay;
         textMesh.GetComponent<TextMeshPro>().text = time;
     }
 
