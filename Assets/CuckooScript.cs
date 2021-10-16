@@ -19,8 +19,7 @@ public class CuckooScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print("position: " + position);
-        print("direction: " + position);
+
         //if going right
         if(direction == 1){
             if(position > max_swing){
