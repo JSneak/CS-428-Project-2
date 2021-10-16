@@ -34,6 +34,7 @@ public class spawnRandomObjects : MonoBehaviour
             // Random r = new Random();
             // int rInt = r.Next(0, 3); //for ints
             int rInt = Random.Range(0,3);
+            print(rInt);
             if(rInt == 0) {
                 Instantiate(randomObj1, loc.position, loc.rotation);
             }
